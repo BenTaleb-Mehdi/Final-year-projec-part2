@@ -1,0 +1,110 @@
+.input {
+  -fx-background-color: transparent;
+  -fx-border-color: transparent transparent #921a1a7a transparent;
+  -fx-border-width: 0 0 2 0;
+  -fx-text-fill: white; /* or your text color */
+  -fx-padding: 5 0 5 0;
+  -fx-font-size: 14px;
+}
+.btnlogin {
+  -fx-background-color: rgb(150, 0, 0);
+  -fx-background-radius: 10px;
+  -fx-cursor: hand;
+}
+.btnlogin:hover {
+  -fx-background-color: rgb(44, 1, 1);
+}
+.navbarlogin {
+  -fx-background-color: rgb(150, 0, 0);
+  -fx-background-radius: 10px;
+}
+
+.logo {
+  -fx-content-display: flex;
+  -fx-alignment: center;
+}
+
+.alear_username {
+  -fx-opacity: 0;
+}
+
+.alear_password {
+  -fx-opacity: 0;
+}
+
+.btnforget {
+  -fx-background-color: transparent;
+  -fx-font-family: "Arial";
+  -fx-font-weight: bold;
+}
+
+.btns_menu {
+  -fx-background-color: white;
+  -fx-text-fill: rgb(0, 0, 0);
+  -fx-font-size: 14px;
+  -fx-font-weight: bold;
+  -fx-padding: 10 20;
+  -fx-background-radius: 10;
+  -fx-cursor: hand;
+  -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.25), 5, 0, 0, 2);
+  -fx-border-color: transparent;
+  -fx-border-width: 0;
+  -fx-transition: all 0.3s ease;
+}
+
+.btns_menu:hover {
+  -fx-background-color: rgb(199, 199, 199);
+  -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.35), 8, 0, 0, 3);
+}
+
+.Menu {
+  -fx-background-color: rgb(12, 12, 12);
+}
+.navbar_dash {
+  -fx-background-color: rgb(19, 19, 19);
+  -fx-background-radius: 15px;
+}
+.best_freelancer {
+  -fx-background-color: rgba(14, 253, 26, 0.585);
+  -fx-background-radius: 10px;
+}
+.nav_bestfreelancers,
+.chartline {
+  -fx-background-color: rgb(255, 255, 255);
+
+  -fx-effect: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -fx-padding: 10;
+  -fx-background-radius: 8;
+}
+.boxes {
+  -fx-background-color: rgb(255, 255, 255);
+
+  -fx-effect: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -fx-padding: 10;
+  -fx-background-radius: 8;
+}
+.box_total_orders {
+  -fx-background-color: rgba(68, 251, 32, 0.205);
+
+  -fx-effect: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -fx-padding: 12;
+  -fx-background-radius: 8;
+}
+.box_statut_orders {
+  -fx-background-color: rgba(251, 32, 32, 0.205);
+
+  -fx-effect: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -fx-padding: 12;
+  -fx-background-radius: 8;
+}
+.total_tipes_orders {
+  -fx-background-color: rgba(32, 134, 251, 0.205);
+
+  -fx-effect: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -fx-padding: 12;
+  -fx-background-radius: 8;
+}
+
+.btn_search {
+  -fx-background-radius: 50%;
+}

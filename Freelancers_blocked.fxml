@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorPane" prefHeight="891.0" prefWidth="1496.0" stylesheets="@dash_style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller_Freelaners_blocked">
+   <children>
+      <TableView fx:id="table" layoutX="26.0" layoutY="167.0" prefHeight="624.0" prefWidth="1429.0">
+         <columns>
+            <TableColumn fx:id="fname" prefWidth="197.8666534423828" text="   First name" />
+            <TableColumn fx:id="lname" prefWidth="194.66665649414062" text="Last name" />
+            <TableColumn fx:id="email" prefWidth="328.5332946777344" text="Email" />
+            <TableColumn fx:id="phone" prefWidth="141.86669921875" text="Phone" />
+            <TableColumn fx:id="cin" prefWidth="147.4666748046875" text="Cart id" />
+            <TableColumn fx:id="skill" prefWidth="112.8001708984375" text="Skill" />
+            <TableColumn fx:id="date" prefWidth="149.5999755859375" text="Date join" />
+            <TableColumn fx:id="actionCol" prefWidth="133.60009765625" text="Option" />
+         </columns>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TableView>
+      <Pane layoutX="48.0" layoutY="24.0" prefHeight="54.0" prefWidth="1417.0" styleClass="navbar_dash">
+         <children>
+            <HBox alignment="CENTER" layoutX="6.0" layoutY="12.0" prefHeight="31.0" prefWidth="182.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="31.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imges/freelancer%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <Label text="All Freelaners" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <HBox alignment="CENTER" layoutX="871.0" layoutY="29.0" prefHeight="44.0" prefWidth="535.0" spacing="20.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
+         <children>
+            <TextField fx:id="searchField" prefHeight="42.0" prefWidth="480.0" promptText="Enter what do you want " style="-fx-background-color: trensparent; -fx-border-color: trensparent;" styleClass="search-bar" />
+            <ImageView fitHeight="18.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imges/magnifying-glass.png" />
+               </image>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="1310.0" layoutY="105.0" prefHeight="48.0" prefWidth="136.0" styleClass="btn_freelancers_blocked">
+         <children>
+            <Button mnemonicParsing="false" onAction="#btn_block" prefHeight="27.0" prefWidth="98.0" style="-fx-background-color: tresparent;" text="Un Blocked" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="25.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imges/unlocked.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </HBox>
+   </children>
+</AnchorPane>

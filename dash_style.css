@@ -1,0 +1,330 @@
+.btns_menu {
+  -fx-background-color: white;
+  -fx-text-fill: rgb(0, 0, 0);
+  -fx-font-size: 14px;
+  -fx-font-weight: bold;
+  -fx-padding: 10 20;
+  -fx-background-radius: 10;
+  -fx-cursor: hand;
+  -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.25), 5, 0, 0, 2);
+  -fx-border-color: transparent;
+  -fx-border-width: 0;
+  -fx-transition: all 0.3s ease;
+}
+
+.btns_menu:hover {
+  -fx-background-color: rgb(199, 199, 199);
+  -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.35), 8, 0, 0, 3);
+}
+
+.Menu {
+  -fx-background-color: rgb(12, 12, 12);
+}
+.navbar_dash {
+  -fx-background-color: rgb(19, 19, 19);
+  -fx-background-radius: 15px;
+}
+.best_freelancer {
+  -fx-background-color: rgba(14, 253, 26, 0.585);
+  -fx-background-radius: 10px;
+}
+.best_freelancer {
+  -fx-background-color: rgba(14, 253, 26, 0.585);
+  -fx-background-radius: 10px;
+  -fx-padding: 20px 20px;
+  -fx-spacing: 10px; /* space between children */
+  -fx-alignment: center-left;
+  -fx-font-weight: bold;
+  -fx-margin-bottom: 10px; /* Doesn't work! See note below */
+}
+
+.nav_bestfreelancers,
+.chartline {
+  -fx-background-color: rgb(255, 255, 255);
+
+  -fx-effect: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -fx-padding: 10;
+  -fx-background-radius: 8;
+}
+.boxes {
+  -fx-background-color: rgb(255, 255, 255);
+
+  -fx-effect: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -fx-padding: 10;
+  -fx-background-radius: 8;
+}
+.box_total_orders {
+  -fx-background-color: rgba(68, 251, 32, 0.205);
+
+  -fx-effect: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -fx-padding: 12;
+  -fx-background-radius: 8;
+}
+.box_statut_orders {
+  -fx-background-color: rgba(251, 32, 32, 0.205);
+
+  -fx-effect: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -fx-padding: 12;
+  -fx-background-radius: 8;
+}
+.total_tipes_orders {
+  -fx-background-color: rgba(32, 134, 251, 0.205);
+
+  -fx-effect: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  -fx-padding: 12;
+  -fx-background-radius: 8;
+}
+
+.btn_search {
+  -fx-background-radius: 50%;
+}
+.input_search {
+}
+.table-view .scroll-bar:horizontal {
+  -fx-opacity: 0;
+  -fx-max-height: 0;
+  -fx-min-height: 0;
+  -fx-pref-height: 0;
+}
+.table-view {
+  -fx-background-color: tresparent;
+  -fx-border-color: transparent;
+  -fx-padding: 10px; /* add px */
+  -fx-table-cell-border-color: transparent;
+  -fx-text-fill: black; /* changed white to black for better visibility on light bg */
+  -fx-font-size: 14px;
+  -fx-font-family: "Segoe UI", sans-serif;
+}
+/* Vertical ScrollBar track */
+.table-view .scroll-bar:vertical .track {
+  -fx-background-color: #f0f0f0; /* light gray background track */
+}
+
+/* Vertical ScrollBar thumb (the draggable part) */
+.table-view .scroll-bar:vertical .thumb {
+  -fx-background-color: #181818; /* green thumb */
+  -fx-background-insets: 1; /* some padding inside */
+  -fx-background-radius: 5px; /* rounded corners */
+}
+/* Set width of vertical scrollbar */
+.table-view .scroll-bar:vertical {
+  -fx-pref-width: 12px; /* Change 12px to whatever width you want */
+}
+/* Vertical ScrollBar thumb on hover */
+.table-view .scroll-bar:vertical .thumb:hover {
+  -fx-background-color: #464646; /* darker green on hover */
+}
+
+.table-view .column-header-background {
+  -fx-background-color: black;
+  -fx-border-color: transparent;
+  -fx-padding: 10px 0px 15px 0px;
+  -fx-background-radius: 10 10 0 0;
+}
+
+.table-view .column-header {
+  -fx-background-color: transparent;
+  -fx-border-insets: 0 1 0 0;
+  -fx-border-color: transparent transparent transparent white;
+  -fx-border-width: 0 1 0 0;
+}
+.table-view .table-row-cell:first-of-type {
+  -fx-padding: 10 0 0 0; /* 10px padding on top */
+}
+.table-view .column-header .label {
+  -fx-text-fill: #ffffff;
+  -fx-font-weight: bold;
+  -fx-cell-size: 60px;
+  -fx-alignment: CENTER_LEFT;
+  -fx-background-radius: 10 10 0 0;
+}
+
+.table-view .table-row-cell {
+  -fx-background-color: transparent;
+  -fx-border-color: transparent;
+  -fx-cell-size: 60px; /* enough height for content + padding */
+}
+
+.table-view .table-cell {
+  -fx-text-fill: #181818;
+  -fx-font-size: 15px;
+  -fx-font-family: Arial;
+  -fx-padding: 10px; /* padding inside cells */
+}
+
+.search-bar {
+  -fx-padding: 10px;
+  -fx-font-size: 14px;
+  -fx-background-radius: 10px;
+  -fx-border-radius: 10px;
+  -fx-border-color: #cccccc;
+  -fx-border-width: 1px;
+  -fx-background-color: #ffffff;
+  -fx-prompt-text-fill: #999999;
+  -fx-text-fill: #333333;
+}
+
+.search-bar:focused {
+  -fx-border-color: #4caf50;
+  -fx-effect: dropshadow(three-pass-box, rgba(76, 175, 80, 0.3), 10, 0, 0, 4);
+}
+
+.btn_block {
+  -fx-background-color: rgb(229, 6, 6);
+  -fx-border-color: transparent;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+  -fx-background-radius: 10px;
+  -fx-font-size: 13px;
+  -fx-font-family: Arial;
+  -fx-cursor: hand;
+  -fx-scale-x: 1;
+  -fx-scale-y: 1;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 4, 0, 0, 1);
+  -fx-transition: all 0.3s ease-in-out;
+}
+.btn_block:hover {
+  -fx-background-color: rgb(200, 0, 0);
+  -fx-scale-x: 1.05;
+  -fx-scale-y: 1.05;
+}
+.btn_unblock {
+  -fx-background-color: rgb(19, 143, 8);
+  -fx-border-color: transparent;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+  -fx-background-radius: 10px;
+  -fx-font-size: 13px;
+  -fx-font-family: Arial;
+  -fx-cursor: hand;
+  -fx-scale-x: 1;
+  -fx-scale-y: 1;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 4, 0, 0, 1);
+  -fx-transition: all 0.3s ease-in-out;
+}
+.btn_unblock:hover {
+  -fx-background-color: rgb(7, 108, 7);
+  -fx-scale-x: 1.05;
+  -fx-scale-y: 1.05;
+}
+.pourcentage {
+  -fx-background-color: #00ff0865;
+  -fx-background-radius: 5px;
+}
+
+.pourcentage_number {
+  -fx-text-fill: #047b08d0;
+  -fx-font-family: Arial;
+  -fx-font-size: 12px;
+  -fx-font-weight: bold;
+}
+
+.btn_freelancers_blocked {
+  -fx-background-color: #141414;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+  -fx-padding: 10 10;
+  -fx-background-radius: 12;
+  -fx-cursor: hand;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0.5, 0, 1);
+}
+.btn_freelancers_blocked:hover {
+  -fx-background-color: #1e1e1e;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 6, 0.6, 0, 2);
+}
+
+.peiChart {
+  -fx-pie-label-visible: false; /* Optional: hide default labels */
+}
+
+.default-color0.peiChart {
+  -fx-pie-color: #2196f3; /* green for Juniors */
+}
+
+.default-color1.peiChart {
+  /* blue for Mid */
+  -fx-pie-color: #4caf50;
+}
+
+.default-color2.peiChart {
+  -fx-pie-color: #ff9800; /* orange for Seniors */
+}
+
+.label-bg-active {
+  -fx-background-color: #d0f5d8; /* light green */
+  -fx-text-fill: green;
+  -fx-font-weight: bold;
+  -fx-padding: 3 8 3 8;
+  -fx-background-radius: 4;
+  -fx-font-size: 13px;
+}
+
+.label-bg-inactive {
+  -fx-background-color: #f5d0d0; /* light red */
+  -fx-text-fill: red;
+  -fx-font-weight: bold;
+  -fx-padding: 3 8 3 8;
+  -fx-background-radius: 4;
+  -fx-font-size: 13px;
+}
+.btn_Edit {
+  -fx-background-color: rgb(29, 96, 252);
+  -fx-border-color: transparent;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+  -fx-background-radius: 10px;
+  -fx-font-size: 13px;
+  -fx-font-family: Arial;
+  -fx-cursor: hand;
+  -fx-scale-x: 1;
+  -fx-scale-y: 1;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 4, 0, 0, 1);
+  -fx-transition: all 0.3s ease-in-out;
+}
+
+.btn_Edit:hover {
+  -fx-background-color: rgb(8, 70, 216);
+  -fx-scale-x: 1.05;
+  -fx-scale-y: 1.05;
+}
+.btn_update {
+  -fx-background-color: rgb(29, 96, 252);
+  -fx-border-color: transparent;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+  -fx-background-radius: 10px;
+  -fx-font-size: 16px;
+  -fx-font-family: Arial;
+  -fx-cursor: hand;
+  -fx-scale-x: 1;
+  -fx-scale-y: 1;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 4, 0, 0, 1);
+  -fx-transition: all 0.3s ease-in-out;
+}
+
+.btn_update:hover {
+  -fx-background-color: rgb(8, 70, 216);
+  -fx-scale-x: 1.05;
+  -fx-scale-y: 1.05;
+}
+
+.btn_Edit_admin {
+  -fx-background-color: rgb(252, 155, 29);
+  -fx-border-color: transparent;
+  -fx-text-fill: white;
+  -fx-font-weight: bold;
+  -fx-background-radius: 10px;
+  -fx-font-size: 15px;
+  -fx-font-family: Arial;
+  -fx-cursor: hand;
+  -fx-scale-x: 1;
+  -fx-scale-y: 1;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 4, 0, 0, 1);
+  -fx-transition: all 0.3s ease-in-out;
+}
+
+.btn_Edit_admin:hover {
+  -fx-background-color: rgb(216, 129, 8);
+  -fx-scale-x: 1.05;
+  -fx-scale-y: 1.05;
+}
